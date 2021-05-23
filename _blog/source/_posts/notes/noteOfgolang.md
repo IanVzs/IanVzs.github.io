@@ -227,3 +227,21 @@ func main() {
 所以Go并没有类与对象一说吧… 
 
 生动点来说那个函数（`func (de *DivideError) Error() string {...}`）的定义就好像是在强行给这个地址的<font color=pink>结构体</font>中<font color=yellow>塞进去一个执行函数</font>。 一个言简意骇的<font color=green>对象</font>实现方法
+
+## go的循环
+- golang 只有for  while==for
+- golang 中没有小括号包裹, 只需要用{}分隔作用域就可以
+
+for 可以有
+1. for A;B;C {}
+2. for ;B; {}
+3. for {}
+
+## go的switch
+- 每个case自动break
+- fallthrough 显式声明可以继续执行下一个case
+- case 无需常量
+- `switch {case}` 可做 if-else 用
+
+## go的指针
+go的指针 没有`指针运算`.
